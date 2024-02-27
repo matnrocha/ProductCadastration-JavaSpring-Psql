@@ -3,7 +3,7 @@ package com.example.demo.domain.product;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.apache.coyote.Request;
+
 
 @Table(name = "product")
 @Entity(name = "product")
