@@ -27,11 +27,10 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity registerProduct(@RequestBody @Validated RequestProductDTO data){ //RequestProduct validates
-        //DTO = data transfer Object
+    public ResponseEntity registerProduct(@RequestBody @Validated RequestProductDTO data){
         Product newProduct = new Product(data);
         repository.save(newProduct);
-        return ResponseEntity.ok().build(); //.build() necessario quando .ok()vazio
+        return ResponseEntity.ok().build();
     }
 
     @PutMapping
