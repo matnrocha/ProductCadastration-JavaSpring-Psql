@@ -5,6 +5,7 @@ import com.example.demo.domain.product.Product;
 import com.example.demo.domain.product.ProductRepository;
 import com.example.demo.domain.product.RequestProductDTO;
 import com.example.demo.domain.product.RequestProductPutDTO;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -45,7 +46,7 @@ public class ProductController {
             product.setPrice_in_cents(data.price_in_cents());
             return ResponseEntity.ok(product);
         } else {
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
     }
 
@@ -65,7 +66,7 @@ public class ProductController {
             product.setActive(false);
             return ResponseEntity.ok(product);
         } else {
-            return ResponseEntity.notFound().build();
+            throw new EntityNotFoundException();
         }
     }
 
