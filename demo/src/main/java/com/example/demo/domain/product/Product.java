@@ -1,6 +1,4 @@
 package com.example.demo.domain.product;
-
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,6 +11,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
@@ -25,9 +24,4 @@ public class Product {
         this.price_in_cents = requestProduct.price_in_cents();
         this.active = true;
     }
-
-
-
-
-
 }
