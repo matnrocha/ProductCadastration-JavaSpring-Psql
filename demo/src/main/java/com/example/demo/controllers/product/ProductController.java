@@ -1,8 +1,8 @@
-package com.example.demo.controllers;
-import com.example.demo.domain.product.Product;
-import com.example.demo.domain.product.ProductRepository;
-import com.example.demo.domain.product.RequestProductDTO;
-import com.example.demo.domain.product.RequestProductPutDTO;
+package com.example.demo.controllers.product;
+import com.example.demo.domain.product.product.Product;
+import com.example.demo.repositories.product.ProductRepository;
+import com.example.demo.domain.product.product.RequestProductDTO;
+import com.example.demo.domain.product.product.RequestProductPutDTO;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.validation.annotation.Validated;
