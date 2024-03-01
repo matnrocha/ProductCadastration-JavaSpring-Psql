@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/demo/src/main/resources/db/migration/V1__create-table-product.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/demo/src/main/resources/db/migration/V2__alter-table-product.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/demo/src/main/resources/db/migration/V3__create-table-users.sql" dialect="GenericSQL" />
   </component>
 </project>
